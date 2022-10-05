@@ -1357,24 +1357,24 @@ function file_video(path) {
   </div>
   ${
     UI.display_drive_link
-      ? '<a type="button" class="btn btn-info" href="https://drive.google.com/file/d/' +
+      ? '<a type="button" class="btn btn-dark" href="https://drive.google.com/file/d/' +
         obj.id +
-        '/view" id ="file_drive_link" target="_blank">GD Link</a>'
+        '/view" id ="file_drive_link" target="_blank">G Drive 🔗</a>'
       : ""
   }
-  <a href="${url}" class="btn btn-primary" role="button" aria-pressed="true">Download</a>
+  <a href="${url}" class="btn btn-success" role="button" aria-pressed="true">⏬ Download</a>
   <div class="btn-group text-center">
-  <button type="button" class="btn btn-outline-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Stream
-  </button>
-  <div class="dropdown-menu">
-  <a class="dropdown-item" href="iina://weblink?url=${url}">IINA</a>
-  <a class="dropdown-item" href="potplayer://${url}">POT</a>
-  <a class="dropdown-item" href="vlc://${urlvlc}">VLC</a>
-  <a class="dropdown-item" href="intent:${url}#Intent;action=com.mxtech.videoplayer.ad.playback_local;package=com.mxtech.videoplayer.ad;S.title=${decodename};end">MX</a>
+    <button type="button" class="btn btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">▶️ Stream</span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="iina://weblink?url=${url}">IINA</a>
+      <a class="dropdown-item" href="potplayer://${url}">POT</a>
+      <a class="dropdown-item" href="vlc://${urlvlc}">VLC</a>
+      <a class="dropdown-item" href="intent:${url}#Intent;action=com.mxtech.videoplayer.ad.playback_local;package=com.mxtech.videoplayer.ad;S.title=${decodename};end">MX</a>
+    </div>
   </div>
-  </div>
-  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-info"> <span class="tooltiptext" id="myTooltip">Copy</span> </button>
+  <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-info"> <span class="tooltiptext" id="myTooltip">🔗 Copy</span> </button>
   <br>
     </div>
     </div>
