@@ -1371,8 +1371,8 @@ function file_video(path) {
         <a class="dropdown-item" href="iina://weblink?url=${url}">IINA</a>
         <a class="dropdown-item" href="potplayer://${url}">PotPlayer</a>
         <a class="dropdown-item" href="vlc://${urlvlc}">VLC</a>
-        <a class="dropdown-item" href="intent:${url}#Intent;package=com.mxtech.videoplayer.ad;end">MX Player</a>
-        <a class="dropdown-item" href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${decodename};end">MX Player Pro</a>
+        <a class="dropdown-item" href="intent:${url}#Intent;action=com.mxtech.videoplayer.ad.playback_local;package=com.mxtech.videoplayer.ad;S.title=${decodename};end">MX Player</a>
+        <a class="dropdown-item" href="intent:${url}#Intent;action=com.mxtech.videoplayer.pro.playback_local;package=com.mxtech.videoplayer.pro;S.title=${decodename};end">MX Player Pro</a>
       </div>
   </div>
   <button onclick="copyFunction()" onmouseout="outFunc()" class="btn btn-success"> <span class="tooltiptext" id="myTooltip">Copy</span> </button>
